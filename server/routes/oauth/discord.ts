@@ -42,7 +42,7 @@ export default defineEventHandler(async (event) => {
 
   // const user = await $fetch<{ id: string }>('https://discord.com/api/users/@me', {
   //   headers: {
-  //     'user-agent': 'SoundsBot (https://soundster.soundsdesigned.com, 0.1)',
+  //     'user-agent': 'SoundsBot (https://soundsters.soundsdesigned.com, 0.1)',
   //     'Authorization': `Bearer ${access_token}`,
   //   },
   // })
@@ -59,7 +59,7 @@ export default defineEventHandler(async (event) => {
   //       access_token,
   //     },
   //     headers: {
-  //       'user-agent': 'Soundsters (https://soundster.soundsdesigned.com, 0.1)',
+  //       'user-agent': 'Soundsters (https://soundsters.soundsdesigned.com, 0.1)',
   //       'Authorization': `Bot ${config.discord.botToken}`,
   //     },
   //   })
@@ -72,7 +72,7 @@ export default defineEventHandler(async (event) => {
   //     {
   //       method: 'PUT',
   //       headers: {
-  //         'user-agent': 'Soundsters (https://soundster.soundsdesigned.com, 0.1)',
+  //         'user-agent': 'Soundsters (https://soundsters.soundsdesigned.com, 0.1)',
   //         'Authorization': `Bot ${config.discord.botToken}`,
   //       },
   //     },
@@ -86,7 +86,7 @@ export default defineEventHandler(async (event) => {
   //     {
   //       method: 'PUT',
   //       headers: {
-  //         'user-agent': 'Soundsters (https://soundster.soundsdesigned.com, 0.1)',
+  //         'user-agent': 'Soundsters (https://soundsters.soundsdesigned.com, 0.1)',
   //         'Authorization': `Bot ${config.discord.botToken}`,
   //       },
   //     },
@@ -99,7 +99,7 @@ export default defineEventHandler(async (event) => {
   //     {
   //       method: 'PUT',
   //       headers: {
-  //         'user-agent': 'Nuxters (https://nuxters.nuxt.com, 0.1)',
+  //         'user-agent': 'Nuxters (https://soundsters.soundsdesigned.com, 0.1)',
   //         'Authorization': `Bot ${config.discord.botToken}`,
   //       },
   //     },
