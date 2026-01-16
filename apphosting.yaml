@@ -1,0 +1,18 @@
+runConfig:
+  minInstances: 0
+  # maxInstances: 100
+  # concurrency: 80
+  # cpu: 1
+  # memoryMiB: 512
+
+env:
+  - variable: NUXT_SESSION_PASSWORD
+    secret: nuxtSessionPassword
+  - variable: NUXT_GITHUB_CLIENT_ID
+    secret: nuxtGithubClientId
+  - variable: NUXT_GITHUB_CLIENT_SECRET
+    secret: nuxtGithubClientSecret
+  - variable: NUXT_GITHUB_TOKEN
+    secret: nuxtGithubAccessToken
+  - variable: NUXT_GITHUB_ACCESS_TOKEN
+    secret: nuxtGithubAccessToken
