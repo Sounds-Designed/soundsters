@@ -1,0 +1,32 @@
+{
+  "folders": [
+    {
+      "path": "."
+    },{
+      "path": "../soundsters-done"
+    }
+  ],
+  "settings": {
+    // ESLint settings
+    "eslint.useFlatConfig": true,
+    // Git settings
+    "git.autofetch": false,
+    "git.confirmSync": false,
+  },
+  "extensions": {
+    "unwantedRecommendations": [],
+    "recommendations": [
+      "britesnow.vscode-toggle-quotes",
+      "ms-vscode-remote.remote-containers",
+      "christian-kohler.npm-intellisense",
+      "vue.volar",
+      "editorconfig.editorconfig",
+      "dbaeumer.vscode-eslint",
+      "donjayamanne.githistory",
+      "github.vscode-github-actions",
+      "eamodio.gitlens",
+      "esbenp.prettier-vscode",
+      "rvest.vs-code-prettier-eslint"
+    ]
+  }
+}
