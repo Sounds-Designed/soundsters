@@ -3,8 +3,15 @@ import type { DropdownMenuItem } from '@nuxt/ui'
 
 const links: DropdownMenuItem[] = [
   {
-    label: 'UI Docs',
-    description: 'UI component documentation',
+    label: 'Sounds Designed',
+    description: 'Sounds Designed website',
+    to: 'https://soundsdesigned.com/?utm_source=soundsters&utm_medium=dropdown&utm_campaign=home',
+    icon: 'i-simple-icons-nuxtdotjs',
+    target: '_blank',
+  },
+  {
+    label: 'Sound UI',
+    description: 'Sound UI documentation',
     to: 'https://ui.soundsdesigned.com/?utm_source=soundsters&utm_medium=dropdown&utm_campaign=home',
     icon: 'i-simple-icons-nuxtdotjs',
     target: '_blank',
