@@ -92,6 +92,7 @@ const { format } = Intl.NumberFormat('en-GB', {})
         </div>
       </div>
       <svg
+      v-if="false"
         width="238"
         height="43"
         viewBox="0 0 1091 200"
