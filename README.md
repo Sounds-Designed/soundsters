@@ -3,7 +3,7 @@
 
 # Soundsters
 
-Discover the number of contributions you made to Sounds Designed Ecosystem.
+Discover the number of contributions you made to Sound UI and the Sounds Designed ecosystem.
 <!-- and get the Soundster badge on [Sounds Designed Discord server](https://chat.soundsdesigned.com). -->
 
 https://soundsters.soundsdesigned.com
