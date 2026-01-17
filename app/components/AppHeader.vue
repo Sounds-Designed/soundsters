@@ -51,7 +51,7 @@ const links: DropdownMenuItem[] = [
           />
         </UDropdownMenu>
       </div>
-      <div class="flex items-center sm:gap-x-4 text-white font-medium">
+      <div v-if="false" class="flex items-center sm:gap-x-4 text-white font-medium">
         <UButton
           v-if="false"
           class="flex items-center sm:-mr-2"
