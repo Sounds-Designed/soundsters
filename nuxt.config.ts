@@ -1,4 +1,5 @@
 import { defineNuxtConfig } from 'nuxt/config'
+import contributors from "./public/contributors.json"
 
 export default defineNuxtConfig({
   modules: [
@@ -45,6 +46,21 @@ export default defineNuxtConfig({
       uIProRoleId: '',
       botToken: '',
     },
+  },
+
+  // ssr: false,
+
+  nitro: {
+    firebase: {
+      gen: 2
+    }
+  //   prerender: {
+  //     routes: [
+  //       // ...contributors.map(contributor => `/${contributor.username}`),
+  //       ...contributors.map(contributor => `/__og-image__/image/${contributor.username}/og.png`)
+  //     ],
+  //     // ignore: ['/dynamic'],
+  //   },
   },
 
   routeRules: {
@@ -108,16 +124,17 @@ export default defineNuxtConfig({
     //     chromium: false,
     //   },
     // },
+
     // zeroRuntime: true,
     compatibility: {
       // disable chromium for prerendering (skips install in CI)
-      prerender: {
-        chromium: false
-      },
+      // prerender: {
+      //   chromium: false
+      // },
       // force WASM binding at runtime
-      runtime: {
-        resvg: 'wasm'
-      }
+      // runtime: {
+      //   resvg: 'wasm'
+      // }
     }
   }
 })
