@@ -53,6 +53,7 @@ const links: DropdownMenuItem[] = [
       </div>
       <div class="flex items-center sm:gap-x-4 text-white font-medium">
         <UButton
+          v-if="false"
           class="flex items-center sm:-mr-2"
           to="https://go.nuxt.com/discord"
           target="_blank"
@@ -69,6 +70,7 @@ const links: DropdownMenuItem[] = [
         </UButton>
         <div class="hidden sm:block h-8 w-px bg-neutral-700 -mr-2 sm:-mr-6" />
         <UButton
+          v-if="false"
           to="http://go.nuxt.com/github"
           class="flex gap-x-2 items-center"
           variant="link"
