@@ -6,25 +6,108 @@ runConfig:
   # memoryMiB: 512
 
 env:
+  - variable: FB_API_KEY
+    secret: firebaseKey
+    availability:
+      - BUILD
+      - RUNTIME
+  - variable: FB_APP_ID
+    secret: soundstersAppId
+    availability:
+      - BUILD
+      - RUNTIME
+  - variable: FB_AUTH_DOMAIN
+    secret: soundstersAuthDomain
+    availability:
+      - BUILD
+      - RUNTIME
+  - variable: FB_MEASUREMENT_ID
+    secret: soundstersMeasurementId
+    availability:
+      - BUILD
+      - RUNTIME
+  - variable: FB_MESSAGE_SENDER_ID
+    secret: soundstersMessageSenderId
+    availability:
+      - BUILD
+      - RUNTIME
+  - variable: FB_PROJECT_ID
+    secret: soundstersProjectId
+    availability:
+      - BUILD
+      - RUNTIME
+  - variable: FB_STORAGE_BUCKET
+    secret: soundstersStorageBucket
+    availability:
+      - BUILD
+      - RUNTIME
+  - variable: GOOGLE_APPLICATION_CREDENTIALS
+    secret: googleApplicationCredentials
+  - variable: NUXT_GITHUB_CLIENT_ID
+    secret: nuxtGithubClientId
+    availability:
+      - BUILD
+      - RUNTIME
+  - variable: NUXT_GITHUB_CLIENT_SECRET
+    secret: nuxtGithubClientSecret
+    availability:
+      - BUILD
+      - RUNTIME
+  - variable: NUXT_GITHUB_TOKEN
+    secret: nuxtGithubAccessToken
+    availability:
+      - BUILD
+      - RUNTIME
+  - variable: NUXT_GITHUB_ACCESS_TOKEN
+    secret: nuxtGithubAccessToken
+    availability:
+      - BUILD
+      - RUNTIME
   - variable: NUXT_PUBLIC_VUEFIRE_CONFIG_API_KEY
     secret: firebaseKey
     availability:
       - BUILD
       - RUNTIME
   - variable: NUXT_PUBLIC_VUEFIRE_APP_CHECK_KEY
-    secret: firebaseAppCheck
+    secret: soundstersAppCheck
     availability:
       - BUILD
       - RUNTIME
-  - variable: GOOGLE_APPLICATION_CREDENTIALS
-    secret: googleApplicationCredentials
+  - variable: NUXT_PUBLIC_VUEFIRE_APP_ID
+    secret: soundstersAppId
+    availability:
+      - BUILD
+      - RUNTIME
+  - variable: NUXT_PUBLIC_VUEFIRE_AUTH_DOMAIN
+    secret: soundstersAuthDomain
+    availability:
+      - BUILD
+      - RUNTIME
+  - variable: NUXT_PUBLIC_VUEFIRE_MEASUREMENT_ID
+    secret: soundstersMeasurementId
+    availability:
+      - BUILD
+      - RUNTIME
+  - variable: NUXT_PUBLIC_VUEFIRE_MESSAGE_SENDER_ID
+    secret: soundstersMessageSenderId
+    availability:
+      - BUILD
+      - RUNTIME
+  - variable: NUXT_PUBLIC_VUEFIRE_PROJECT_ID
+    secret: soundstersProjectId
+    availability:
+      - BUILD
+      - RUNTIME
+  - variable: NUXT_PUBLIC_VUEFIRE_STORAGE_BUCKET
+    secret: soundstersStorageBucket
+    availability:
+      - BUILD
+      - RUNTIME
   - variable: NUXT_SESSION_PASSWORD
     secret: nuxtSessionPassword
-  - variable: NUXT_GITHUB_CLIENT_ID
-    secret: nuxtGithubClientId
-  - variable: NUXT_GITHUB_CLIENT_SECRET
-    secret: nuxtGithubClientSecret
-  - variable: NUXT_GITHUB_TOKEN
-    secret: nuxtGithubAccessToken
-  - variable: NUXT_GITHUB_ACCESS_TOKEN
-    secret: nuxtGithubAccessToken
+    availability:
+      - BUILD
+      - RUNTIME
+    availability:
+      - BUILD
+      - RUNTIME
