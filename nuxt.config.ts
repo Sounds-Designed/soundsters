@@ -12,6 +12,7 @@ export default defineNuxtConfig({
     '@nuxt/test-utils/module',
     '@nuxthub/core',
   ],
+
   devtools: { enabled: true },
 
   app: {
@@ -20,6 +21,8 @@ export default defineNuxtConfig({
     },
     pageTransition: false,
   },
+
+  colorMode: { preference: 'light', fallback: 'light' },
 
   css: ['~/assets/css/main.css'],
 
@@ -67,7 +70,7 @@ export default defineNuxtConfig({
 
   eslint: {
     config: {
-      stylistic: true,
+      stylistic: false,
     },
   },
 
