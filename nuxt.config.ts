@@ -8,9 +8,11 @@ export default defineNuxtConfig({
     '@nuxtjs/plausible',
     '@vueuse/nuxt',
     'nuxt-og-image',
+    'nuxt-vuefire',
     '@nuxt/image',
     '@nuxt/test-utils/module',
     '@nuxthub/core',
+    ["@nuxtjs/google-adsense", { id: "ca-pub-4312209976800902" }],
   ],
 
   devtools: { enabled: true },
@@ -76,6 +78,25 @@ export default defineNuxtConfig({
 
   image: {
     provider: 'github',
+  },
+
+  vuefire: {
+    auth: true,
+    appCheck: {
+      debug: process.env.NODE_ENV !== "production",
+      isTokenAutoRefreshEnabled: process.env.NUXT_PUBLIC_VUEFIRE_TOKEN_AUTO_REFRESH || true,
+      provider: process.env.NUXT_PUBLIC_VUEFIRE_APP_CHECK_PROVIDER || "ReCaptchaV3",
+      key: process.env.NUXT_PUBLIC_VUEFIRE_APP_CHECK_KEY || "",
+    },
+    config: {
+      apiKey: process.env.NUXT_PUBLIC_VUEFIRE_API_KEY || "",
+      authDomain: process.env.NUXT_PUBLIC_VUEFIRE_AUTH_DOMAIN || "sounds-designed.firebaseapp.com",
+      projectId: process.env.NUXT_PUBLIC_VUEFIRE_PROJECT_ID || "sounds-designed",
+      storageBucket: process.env.NUXT_PUBLIC_VUEFIRE_STORAGE_BUCKET || "sounds-designed.firebasestorage.app",
+      messagingSenderId: process.env.NUXT_PUBLIC_VUEFIRE_MESSAGING_SENDER_ID || "496837511158",
+      appId: process.env.NUXT_PUBLIC_VUEFIRE_APP_ID || "1:496837511158:web:f1e74f7808c99b1737e9d7",
+      measurementId: process.env.NUXT_PUBLIC_VUEFIRE_MEASUREMENT_ID || "G-M0DJR6KDPK",
+    },
   },
 
   ogImage: {
