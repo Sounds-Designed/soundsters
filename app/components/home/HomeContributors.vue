@@ -31,7 +31,7 @@ const contributors = computed(() => {
           :key="i"
           class="pt-[100%] relative"
         >
-          <div class="absolute inset-0 bg-neutral-900 rounded-xl animate-pulse" />
+          <div class="absolute inset-0 bg-[#3d3d3d] rounded-xl animate-pulse" />
         </div>
       </template>
       <div
@@ -67,10 +67,10 @@ const contributors = computed(() => {
         </NuxtLink>
       </div>
     </div>
-    <div v-if="contributors?.length >= limit">
+    <div v-if="contributors?.length >= limit || true">
       <div class="pt-8 flex justify-center">
         <UButton
-          variant="outline"
+          variant="solid"
           color="neutral"
           class="rounded-full"
           size="xl"

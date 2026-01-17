@@ -30,21 +30,21 @@ const links: DropdownMenuItem[] = [
 </script>
 
 <template>
-  <div class="h-20 w-full sticky top-0 bg-neutral-950/70 backdrop-blur-md z-50 flex flex-col justify-center">
+  <div class="h-20 w-full sticky top-0 bg-default backdrop-blur-md z-50 flex flex-col justify-center">
     <UContainer class="flex justify-between items-center w-full">
       <div class="flex items-center">
         <NuxtLink to="/" aria-label="go to home page" class="flex items-center">
           <TheLogo class="h-6" />
         </NuxtLink>
         <UDropdownMenu :items="links"
-          :ui="{ item: 'group', itemLeadingIcon: 'group-data-highlighted:text-primary text-white hover:text-primary', itemWrapper: 'group-data-highlighted:text-primary transition-colors' }"
+          :ui="{ item: 'data-highlighted:text-highlighted data-[state=open]:text-highlighted before:bg-linear-to-b  data-highlighted:before:from-[#3d3d3d]!  data-highlighted:before:to-[#2d2d2d]! data-[state=open]:before:from-[#3d3d3d]! data-[state=open]:before:to-[#2d2d2d]!', content: 'bg-linear-to-b from-[#3d3d3d] to-[#2d2d2d] ring-[#3d3d3d] border-none rounded-lg', itemLeadingIcon: 'rounded-lg transition-colors' }"
           size="xl">
           <template #item-leading>
             <TheIcon
               class="iconify i-simple-icons:nuxtdotjs shrink-0 group-data-[state=open]:text-default transition-colors size-6 group-data-highlighted:fill-primary group-data-highlighted:text-primary text-white hover:text-primary" />
           </template>
-          <UButton variant="ghost" color="neutral" icon="i-ph-caret-down-fill" square
-            class="ml-1 opacity-50 hover:opacity-100" aria-label="dropdown button" />
+          <UButton variant="ghost" color="primary" :ui="{base:'bg-[#2d2d2d] hover:bg-[#3d3d3d]'}" icon="i-ph-caret-down-fill" square
+            class="ml-1" aria-label="dropdown button" />
         </UDropdownMenu>
       </div>
       <div v-if="false" class="flex items-center sm:gap-x-4 text-white font-medium">

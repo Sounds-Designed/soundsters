@@ -1,6 +1,6 @@
 <template>
-  <div class="bg-linear-to-b from-slate-800/50 to-slate-900/50 border border-slate-800 rounded-lg ">
-    <div class="bg-[url('/join-gradient-bg-sm.svg')] lg:bg-[url('/join-gradient-bg.svg')] bg-no-repeat bg-bottom flex flex-col gap-y-3 text-slate-100 items-center justify-center  py-[72px] px-4 sm:px-6 md:px-16 lg:px-[172px]">
+  <div class="bg-linear-to-b from-[#3d3d3d] to-[#2d2d2d] ring-[#3d3d3d] border-none rounded-lg ">
+    <div class="bg-[url('/join-gradient-bg-sm.svg')] bg-size-[-100%] lg:bg-[url('/join-gradient-bg.svg')] bg-no-repeat bg-bottom flex flex-col gap-y-3 text-slate-100 items-center justify-center  py-18 px-4 sm:px-6 md:px-16 lg:px-43">
       <h1 class="text-4xl font-bold text-center">
         Ready to <span class="text-green-400">Join us</span>?
       </h1>
@@ -14,7 +14,7 @@
           icon="i-simple-icons-github"
           label="Sound UI Repository"
           class="rounded-full px-7"
-          variant="outline"
+          variant="solid"
           color="neutral"
           target="_blank"
           aria-label="sounds-designed-ui"

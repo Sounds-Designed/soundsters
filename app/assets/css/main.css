@@ -28,6 +28,8 @@
   --color-green-700: #007e4a;
   --color-green-800: #005e38;
   --color-green-900: #003f25;
+
+
 }
 
 /*
@@ -46,4 +48,29 @@
   ::file-selector-button {
     border-color: var(--color-neutral-200, currentcolor);
   }
+}
+
+:root {
+  --ui-primary: var(--color-green-400);
+  --ui-secondary: var(--ui-color-secondary-500);
+  --ui-success: var(--ui-color-success-500);
+  --ui-info: var(--ui-color-info-500);
+  --ui-warning: var(--ui-color-warning-500);
+  --ui-error: var(--ui-color-error-500);
+  --ui-header-height: --spacing(20);
+  --color-error: var(--color-red-500);
+  --ui-bg: #1d1d1d;
+  --ui-bg-elevated: #3d3d3d;
+}
+.dark {
+  --ui-primary: var(--color-green-400);
+  --ui-secondary: var(--ui-color-secondary-500);
+  --ui-success: var(--ui-color-success-500);
+  --ui-info: var(--ui-color-info-500);
+  --ui-warning: var(--ui-color-warning-500);
+  --ui-error: var(--ui-color-error-500);
+  --ui-header-height: --spacing(20);
+  --color-error: var(--color-red-500);
+  --ui-bg: #1d1d1d;
+  --ui-bg-elevated: #3d3d3d;
 }

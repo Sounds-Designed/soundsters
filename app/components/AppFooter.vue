@@ -19,7 +19,7 @@ const socialLinks = [
 </script>
 
 <template>
-  <div class="border-t border-neutral-800">
+  <div class="border-t border-[#1d1d1d]/50 bg-[#1d1d1d]">
     <UContainer class="flex justify-between gap-x-4 items-center h-20 sm:h-16">
       <span class="text-neutral-300 text-sm">
         Made with love by Sounds Designed 💚 (<NuxtLink

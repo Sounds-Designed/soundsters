@@ -86,8 +86,8 @@ const columns: TableColumn<Score>[] = [
 <template>
   <div class="relative w-full md:max-w-100 lg:max-w-150 min-h-75 md:min-h-87.5 lg:min-h-55.5">
     <UPageCard
-      class="md:max-w-100 lg:max-w-150 min-h-75 md:min-h-87.5 lg:min-h-55.5"
-      :class="{ 'hover:ring-primary/60': linked.github && (canUnlockNuxterBadge || canUnlockSoundsterBadge || canUnlockUIProBadge) }"
+      class="md:max-w-100 lg:max-w-150 min-h-75 md:min-h-87.5 lg:min-h-55.5 border-none ring-transparent bg-linear-to-b from-[#3d3d3d] to-[#2d2d2d]"
+      :class="{ 'hover:ring-primary': linked.github && (canUnlockNuxterBadge || canUnlockSoundsterBadge || canUnlockUIProBadge) }"
       :to="!!linked.github ? `/${contributor.username}` : undefined">
       <!-- github connect -->
       <div v-if="!linked.github" class="flex gap-y-6 flex-col justify-center items-center">
@@ -101,11 +101,7 @@ const columns: TableColumn<Score>[] = [
 
       <!-- linked to github -->
       <div v-else-if="linked.github" class="w-full h-full">
-        <img v-if="canUnlockNuxterBadge" src="/card-gradient-bg.svg" class="absolute inset-0 w-full rounded-lg" alt="">
-        <img
-          v-if="canUnlockSoundsterBadge" src="/card-gradient-bg.svg" class="absolute inset-0 w-full rounded-lg"
-          alt="">
-        <img v-if="canUnlockUIProBadge" src="/card-gradient-bg.svg" class="absolute inset-0 w-full rounded-lg" alt="">
+        <img v-if="(canUnlockNuxterBadge || canUnlockSoundsterBadge || canUnlockUIProBadge) && false" src="/card-gradient-bg.svg" class="absolute inset-0 w-full rounded-lg" alt="">
 
         <div class="absolute right-2 top-2 z-50">
           <UButton
@@ -119,7 +115,7 @@ const columns: TableColumn<Score>[] = [
         </div>
         <div class="absolute left-0 right-0 flex justify-center -bottom-4 gap-x-2 px-2">
           <UButton
-            class="relative z-50 truncate" color="neutral" variant="outline" :icon="!canUnlockADiscordBadge
+            class="relative z-50 truncate" variant="solid" color="neutral" :icon="!canUnlockADiscordBadge
             ? 'i-ph-smiley'
             : !linked.discord
               ? 'i-simple-icons-discord'
@@ -128,7 +124,7 @@ const columns: TableColumn<Score>[] = [
             :label="linked.discord ? badgeName : 'Unlock badge(s)'"
             :to="!linked.discord ? '/connect/discord' : undefined" external @click="unlockButton" />
           <UButton
-            v-if="linked.github" color="neutral" variant="outline" class="hidden xl:flex z-50"
+            v-if="linked.github" variant="solid" color="neutral" class="hidden xl:flex z-50"
             icon="i-ph-share-network" aria-label="Share my Soundster profile" :to="`/${contributor.username}`"
             label="Share my Soundster profile" @click.stop />
         </div>
@@ -148,7 +144,7 @@ const columns: TableColumn<Score>[] = [
                 body: 'p-0 sm:p-0',
               }">
                 <UButton
-                  variant="ghost" icon="i-ph-info" color="neutral"
+                  variant="ghost" icon="i-ph-info"
                   class="ml-1 transitions-color duration-200 z-10" aria-label="show score table" />
                 <template #body>
                   <UTable class="overflow-x-auto" :data="detailedScore" :columns="columns" />
