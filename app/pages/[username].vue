@@ -195,19 +195,19 @@ function backToHome() {
           </div>
         </div>
       </div>
-      <div class="border-primary-400 rounded-xl border h-71.25 bg-no-repeat bg-top p-6 text-center flex flex-col items-center justify-end bg-[linear-gradient(180deg,rgba(0,220,130,0.40)_0%,rgba(0,220,130,0.00)_100%,rgba(2,4,32,0.50)),url('/issues-card-bg.svg')]">
+      <div class="border-primary rounded-xl border h-71.25 bg-no-repeat bg-top p-6 text-center flex flex-col items-center justify-end bg-[linear-gradient(180deg,rgba(0,220,130,0.40)_0%,rgba(0,220,130,0.00)_100%,rgba(2,4,32,0.50)),url('/issues-card-bg.svg')]">
         <span class="text-5xl font-medium">{{ format(contributor.issues) }}</span>
         <span class="text-2xl">{{ contributor?.issues === 1 ? 'Issue' : 'Issues' }}</span>
       </div>
-      <div class="border-blue-400 rounded-xl border h-71.25 bg-no-repeat bg-top p-6 text-center flex flex-col items-center justify-end bg-[linear-gradient(180deg,rgba(64,187,255,0.40)_0%,rgba(64,187,255,0.00)_100%,rgba(2,4,32,0.50)),url('/comments-card-bg.svg')]">
+      <div class="border-primary rounded-xl border h-71.25 bg-no-repeat bg-top p-6 text-center flex flex-col items-center justify-end bg-[linear-gradient(180deg,rgba(0,220,130,0.40)_0%,rgba(0,220,130,0.00)_100%,rgba(2,4,32,0.50)),url('/comments-card-bg.svg')]">
         <span class="text-5xl font-medium">{{ format(contributor.comments) }}</span>
         <span class="text-2xl">{{ contributor?.comments === 1 ? 'Comment' : 'Comments' }}</span>
       </div>
-      <div class="border-violet-400 rounded-xl border h-71.25 bg-no-repeat bg-top p-6 text-center flex flex-col items-center justify-end bg-[linear-gradient(180deg,rgba(139,92,246,0.40)_0%,rgba(139,92,246,0.00)_100%,rgba(2,4,32,0.50)),url('/pull-requests-card-bg.svg')]">
+      <div class="border-primary rounded-xl border h-71.25 bg-no-repeat bg-top p-6 text-center flex flex-col items-center justify-end bg-[linear-gradient(180deg,rgba(0,220,130,0.40)_0%,rgba(0,220,130,0.00)_100%,rgba(2,4,32,0.50)),url('/pull-requests-card-bg.svg')]">
         <span class="text-5xl font-medium">{{ format(contributor.merged_pull_requests) }}</span>
         <span class="text-2xl">Merged {{ contributor?.merged_pull_requests === 1 ? 'PR' : 'PRs' }}</span>
       </div>
-      <div class="border-yellow-400 rounded-xl border h-71.25 bg-no-repeat bg-top p-6 text-center flex flex-col items-center justify-end bg-[linear-gradient(180deg,rgba(247,209,76,0.40)_0%,rgba(247,209,76,0.00)_100%,rgba(2,4,32,0.50)),url('/reactions-card-bg.webp')]">
+      <div class="border-primary rounded-xl border h-71.25 bg-no-repeat bg-top p-6 text-center flex flex-col items-center justify-end bg-[linear-gradient(180deg,rgba(0,220,130,0.40)_0%,rgba(0,220,130,0.00)_100%,rgba(2,4,32,0.50)),url('/reactions-card-bg.webp')]">
         <span class="text-5xl font-medium">{{ format(contributor.reactions) }}</span>
         <span class="text-2xl">{{ contributor?.reactions === 1 ? 'Reaction' : 'Reactions' }}</span>
       </div>
