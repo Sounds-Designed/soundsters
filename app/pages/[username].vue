@@ -50,7 +50,7 @@ function backToHome() {
 <template>
   <div
     v-if="contributor"
-    class="pb-15 lg:min-h-[calc(100dvh-9rem)] flex flex-col items-center justify-center"
+    class="pb-15 lg:min-h-[calc(100dvh-9.0625rem)] flex flex-col items-center justify-center"
   >
     <div class="flex items-start justify-start w-full h-full pb-8  mb-8">
       <UButton
