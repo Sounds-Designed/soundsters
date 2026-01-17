@@ -118,7 +118,7 @@ function backToHome() {
               <span class="block mb-10 md:mb-0 h-px w-23 bg-neutral-800" />
 
               <div class="flex flex-col items-center justify-center text-center gap-y-3">
-                <span class="text-lg">Share your Soundster profile ✨</span>
+                <span class="text-lg">Share your <ULink to="index" class="text-primary">Soundster</ULink> profile ✨</span>
 
                 <UButton
                   color="primary"
