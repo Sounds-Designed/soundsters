@@ -6,6 +6,18 @@ runConfig:
   # memoryMiB: 512
 
 env:
+  - variable: NUXT_PUBLIC_VUEFIRE_CONFIG_API_KEY
+    secret: firebaseKey
+    availability:
+      - BUILD
+      - RUNTIME
+  - variable: NUXT_PUBLIC_VUEFIRE_APP_CHECK_KEY
+    secret: firebaseAppCheck
+    availability:
+      - BUILD
+      - RUNTIME
+  - variable: GOOGLE_APPLICATION_CREDENTIALS
+    secret: googleApplicationCredentials
   - variable: NUXT_SESSION_PASSWORD
     secret: nuxtSessionPassword
   - variable: NUXT_GITHUB_CLIENT_ID
