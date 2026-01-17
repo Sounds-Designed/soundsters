@@ -11,7 +11,7 @@ const { format } = Intl.NumberFormat('en-GB', {})
 </script>
 
 <template>
-  <div class="flex flex-row justify-between w-full h-full p-[38px] bg-default">
+  <div class="flex flex-row justify-between w-full h-full p-[38px] bg-[#1d1d1d]">
     <div class="flex flex-col w-1/3 items-center py-10 justify-between text-white">
       <div class="flex flex-col items-center">
         <UAvatar :src="contributor.username" :ui="{ root: 'flex size-32 text-5xl', image: 'rounded-full' }" width="200"
