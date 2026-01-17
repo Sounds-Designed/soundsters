@@ -108,6 +108,7 @@ export default defineNuxtConfig({
     //     chromium: false,
     //   },
     // },
+    // zeroRuntime: true,
     compatibility: {
       // disable chromium for prerendering (skips install in CI)
       prerender: {
