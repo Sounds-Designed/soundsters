@@ -50,7 +50,7 @@ function backToHome() {
 <template>
   <div
     v-if="contributor"
-    class="pb-[60px] lg:min-h-[calc(100dvh-9rem)] flex flex-col items-center justify-center"
+    class="pb-15 lg:min-h-[calc(100dvh-9rem)] flex flex-col items-center justify-center"
   >
     <div class="flex items-start justify-start w-full h-full pb-8  mb-8">
       <UButton
@@ -63,9 +63,9 @@ function backToHome() {
         @click.prevent="backToHome()"
       />
     </div>
-    <div class="grid grid-col-1 md:grid-cols-2 lg:grid-cols-3 w-full gap-[42px]">
-      <div class="relative z-40 md:col-span-2 h-full md:h-[400px] lg:h-full lg:col-span-1 lg:row-span-2 bg-neutral-800 p-px rounded-xl before:content-[''] before:absolute before:top-0 before:left-0 before:w-full before:h-full before:rounded-[10px] before:bg-[linear-gradient(to_bottom_right,#00dc82,#1e293b)] before:-z-10 hover:before:bg-[linear-gradient(to_bottom_right,#00dc82,#00dc82)]">
-        <div class="bg-[url('/card-gradient-bg.svg')] bg-no-repeat bg-size-[300%] flex flex-col md:flex-row lg:flex-col items-center justify-between h-full z-40 bg-neutral-950! rounded-[9.5px] relative p-[18px] sm:p-11 hover:border-primary">
+    <div class="grid grid-col-1 md:grid-cols-2 lg:grid-cols-3 w-full gap-10.5">
+      <div class="relative z-40 md:col-span-2 h-full md:h-100 lg:h-full lg:col-span-1 lg:row-span-2 bg-neutral-800 p-px rounded-xl before:content-[''] before:absolute before:top-0 before:left-0 before:w-full before:h-full before:rounded-[10px] before:bg-[linear-gradient(to_bottom_right,#00dc82,#1e293b)] before:-z-10 hover:before:bg-[linear-gradient(to_bottom_right,#00dc82,#00dc82)]">
+        <div class="bg-[url('/card-gradient-bg.svg')] bg-no-repeat bg-size-[300%] flex flex-col md:flex-row lg:flex-col items-center justify-between h-full z-40 bg-neutral-950! rounded-[9.5px] relative p-4.5 sm:p-11 hover:border-primary">
           <div class="flex flex-col md:flex-row lg:flex-col gap-y-2 pb-2 md:w-full items-center text-center justify-between">
             <NuxtImg
               :src="contributor.username"
@@ -74,7 +74,7 @@ function backToHome() {
               :style="{ 'view-transition-name': `soundster-${contributor.username}` }"
             />
             <div class="flex flex-col items-center gap-4">
-              <div class="flex flex-col gap-y-[18px]">
+              <div class="flex flex-col gap-y-4.5">
                 <UButton
                   :to="`https://github.com/${contributor.username}`"
                   color="neutral"
@@ -117,7 +117,7 @@ function backToHome() {
                 </div>
               </div>
 
-              <span class="block mb-10 md:mb-0 h-px w-[92px] bg-neutral-800" />
+              <span class="block mb-10 md:mb-0 h-px w-23 bg-neutral-800" />
 
               <div class="flex flex-col items-center justify-center text-center gap-y-3">
                 <span class="text-lg">Share your Soundster profile ✨</span>
@@ -126,7 +126,7 @@ function backToHome() {
                   :color="pageCopied ? 'primary' : 'neutral'"
                   :variant="pageCopied ? 'subtle' : 'outline'"
                   size="xl"
-                  class="max-w-[250px] m:max-w-[270px] xl:max-w-[300px]"
+                  class="max-w-62.5 m:max-w-[270px] xl:max-w-75"
                   :label="contributorUrl"
                   trailing
                   :icon="pageCopied ? 'i-ph-check' : 'i-ph-copy'"
@@ -142,7 +142,7 @@ function backToHome() {
                     color="neutral"
                     variant="outline"
                     size="xl"
-                    class="max-w-[250px] m:max-w-[270px] xl:max-w-[300px]"
+                    class="max-w-62.5 m:max-w-[270px] xl:max-w-75"
                     label="Add your Soundster card on Github"
                     icon="i-simple-icons-github"
                     trailing
@@ -195,19 +195,19 @@ function backToHome() {
           </div>
         </div>
       </div>
-      <div class="border-primary-400 rounded-xl border h-[285px] bg-no-repeat bg-top p-6 text-center flex flex-col items-center justify-end bg-[linear-gradient(180deg,_rgba(0,_220,_130,_0.40)_0%,_rgba(0,_220,_130,_0.00)_100%,_rgba(2,_4,_32,_0.50)),url('/issues-card-bg.svg')]">
+      <div class="border-primary-400 rounded-xl border h-71.25 bg-no-repeat bg-top p-6 text-center flex flex-col items-center justify-end bg-[linear-gradient(180deg,rgba(0,220,130,0.40)_0%,rgba(0,220,130,0.00)_100%,rgba(2,4,32,0.50)),url('/issues-card-bg.svg')]">
         <span class="text-5xl font-medium">{{ format(contributor.issues) }}</span>
         <span class="text-2xl">{{ contributor?.issues === 1 ? 'Issue' : 'Issues' }}</span>
       </div>
-      <div class="border-blue-400 rounded-xl border h-[285px] bg-no-repeat bg-top p-6 text-center flex flex-col items-center justify-end bg-[linear-gradient(180deg,_rgba(64,_187,_255,_0.40)_0%,_rgba(64,_187,_255,_0.00)_100%,_rgba(2,_4,_32,_0.50)),url('/comments-card-bg.svg')]">
+      <div class="border-blue-400 rounded-xl border h-71.25 bg-no-repeat bg-top p-6 text-center flex flex-col items-center justify-end bg-[linear-gradient(180deg,rgba(64,187,255,0.40)_0%,rgba(64,187,255,0.00)_100%,rgba(2,4,32,0.50)),url('/comments-card-bg.svg')]">
         <span class="text-5xl font-medium">{{ format(contributor.comments) }}</span>
         <span class="text-2xl">{{ contributor?.comments === 1 ? 'Comment' : 'Comments' }}</span>
       </div>
-      <div class="border-violet-400 rounded-xl border h-[285px] bg-no-repeat bg-top p-6 text-center flex flex-col items-center justify-end bg-[linear-gradient(180deg,_rgba(139,_92,_246,_0.40)_0%,_rgba(139,_92,_246,_0.00)_100%,_rgba(2,_4,_32,_0.50)),url('/pull-requests-card-bg.svg')]">
+      <div class="border-violet-400 rounded-xl border h-71.25 bg-no-repeat bg-top p-6 text-center flex flex-col items-center justify-end bg-[linear-gradient(180deg,rgba(139,92,246,0.40)_0%,rgba(139,92,246,0.00)_100%,rgba(2,4,32,0.50)),url('/pull-requests-card-bg.svg')]">
         <span class="text-5xl font-medium">{{ format(contributor.merged_pull_requests) }}</span>
         <span class="text-2xl">Merged {{ contributor?.merged_pull_requests === 1 ? 'PR' : 'PRs' }}</span>
       </div>
-      <div class="border-yellow-400 rounded-xl border h-[285px] bg-no-repeat bg-top p-6 text-center flex flex-col items-center justify-end bg-[linear-gradient(180deg,_rgba(247,_209,_76,_0.40)_0%,_rgba(247,_209,_76,_0.00)_100%,_rgba(2,_4,_32,_0.50)),url('/reactions-card-bg.webp')]">
+      <div class="border-yellow-400 rounded-xl border h-71.25 bg-no-repeat bg-top p-6 text-center flex flex-col items-center justify-end bg-[linear-gradient(180deg,rgba(247,209,76,0.40)_0%,rgba(247,209,76,0.00)_100%,rgba(2,4,32,0.50)),url('/reactions-card-bg.webp')]">
         <span class="text-5xl font-medium">{{ format(contributor.reactions) }}</span>
         <span class="text-2xl">{{ contributor?.reactions === 1 ? 'Reaction' : 'Reactions' }}</span>
       </div>
