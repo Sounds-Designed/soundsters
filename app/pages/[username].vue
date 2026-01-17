@@ -56,7 +56,7 @@ function backToHome() {
       <UButton
         to="/"
         variant="link"
-        label="back to homepage"
+        label="Back to homepage"
         icon="i-ph-arrow-left-thin"
         color="neutral"
         class="transition-colors duration-200"
