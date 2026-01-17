@@ -158,7 +158,7 @@ const columns: TableColumn<Score>[] = [
           </div>
 
           <div class="flex flex-col gap-y-6 text-neutral-300 w-full">
-            <div v-if="false" class="flex items-center justify-between gap-2 w-full">
+            <div class="flex items-center justify-between gap-2 w-full">
               <span><span class="text-white font-medium">{{ format(contributor.merged_pull_requests) }}</span> merged
                 pull
                 request{{ contributor.merged_pull_requests > 1 ? 's' : '' }}</span>
@@ -167,7 +167,7 @@ const columns: TableColumn<Score>[] = [
                 base: 'h-5 w-5',
               }" disabled />
             </div>
-            <div v-if="false" class="flex items-center justify-between gap-2">
+            <div class="flex items-center justify-between gap-2">
               <span><span class="text-white font-medium">{{ format(contributor.helpful_issues) }}</span> helpful issue{{
                 contributor.helpful_issues > 1 ? 's' : '' }}</span>
               <UCheckbox
@@ -175,7 +175,7 @@ const columns: TableColumn<Score>[] = [
                 base: 'h-5 w-5',
               }" disabled />
             </div>
-            <div v-if="false" class="flex items-center justify-between gap-2">
+            <div class="flex items-center justify-between gap-2">
               <span><span class="text-white font-medium">{{ format(contributor.helpful_comments) }}</span> helpful
                 comment{{
                   contributor.helpful_comments > 1 ? 's' : '' }}</span>
