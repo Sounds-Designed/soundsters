@@ -54,13 +54,13 @@ export default defineNuxtConfig({
     firebase: {
       gen: 2
     }
-  //   prerender: {
-  //     routes: [
-  //       // ...contributors.map(contributor => `/${contributor.username}`),
-  //       ...contributors.map(contributor => `/__og-image__/image/${contributor.username}/og.png`)
-  //     ],
-  //     // ignore: ['/dynamic'],
-  //   },
+    //   prerender: {
+    //     routes: [
+    //       // ...contributors.map(contributor => `/${contributor.username}`),
+    //       ...contributors.map(contributor => `/__og-image__/image/${contributor.username}/og.png`)
+    //     ],
+    //     // ignore: ['/dynamic'],
+    //   },
   },
 
   routeRules: {
@@ -116,6 +116,9 @@ export default defineNuxtConfig({
   },
 
   ogImage: {
+    defaults: {
+      cacheMaxAgeSeconds: 60 * 60 * .01 * 1 // 7 days
+    },
     // runtimeCacheStorage: {
     //   driver: 'vercel-runtime-cache',
     // },
