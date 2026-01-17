@@ -180,10 +180,10 @@ function backToHome() {
                       </p>
                       <p class="text-neutral-400 text-center">
                         Example : <ULink
-                          to="https://github.com/Atinux"
+                          to="https://github.com/codetheorist"
                           target="_blank"
-                        >Atinux profile</ULink> with <ULink
-                          to="https://raw.githubusercontent.com/Atinux/Atinux/main/README.md"
+                        >CodeTheorist profile</ULink> with <ULink
+                          to="https://raw.githubusercontent.com/codetheorist/codetheorist/main/README.md"
                           target="_blank"
                         >this template</ULink>
                       </p>
