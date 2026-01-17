@@ -55,7 +55,7 @@ export default defineNuxtConfig({
     viewTransition: true,
   },
 
-  compatibilityDate: '2025-07-31',
+  compatibilityDate: '2026-01-17',
 
   hub: {
     cache: true,
@@ -100,13 +100,23 @@ export default defineNuxtConfig({
   },
 
   ogImage: {
-    runtimeCacheStorage: {
-      driver: 'vercel-runtime-cache',
-    },
+    // runtimeCacheStorage: {
+    //   driver: 'vercel-runtime-cache',
+    // },
+    // compatibility: {
+    //   runtime: {
+    //     chromium: false,
+    //   },
+    // },
     compatibility: {
-      runtime: {
-        chromium: false,
+      // disable chromium for prerendering (skips install in CI)
+      prerender: {
+        chromium: false
       },
-    },
-  },
+      // force WASM binding at runtime
+      runtime: {
+        resvg: 'wasm'
+      }
+    }
+  }
 })
