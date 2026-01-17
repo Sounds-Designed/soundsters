@@ -1,4 +1,4 @@
-import type { Contributor, ModuleMaintainer } from '#shared/types'
+import type { Contributor, ModuleMaintainer as _ModuleMaintainer } from '#shared/types'
 import { Octokit } from 'octokit'
 
 export const fetchContributors = cachedFunction<Contributor[]>(async (event) => {

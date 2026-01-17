@@ -85,7 +85,8 @@ const columns: TableColumn<Score>[] = [
 
 <template>
   <div class="relative w-full md:max-w-100 lg:max-w-150 min-h-75 md:min-h-87.5 lg:min-h-55.5">
-    <UPageCard class="md:max-w-100 lg:max-w-150 min-h-75 md:min-h-87.5 lg:min-h-55.5"
+    <UPageCard
+      class="md:max-w-100 lg:max-w-150 min-h-75 md:min-h-87.5 lg:min-h-55.5"
       :class="{ 'hover:ring-primary/60': linked.github && (canUnlockNuxterBadge || canUnlockSoundsterBadge || canUnlockUIProBadge) }"
       :to="!!linked.github ? `/${contributor.username}` : undefined">
       <!-- github connect -->
@@ -93,34 +94,41 @@ const columns: TableColumn<Score>[] = [
         <p class="text-xl text-neutral-50 text-center">
           Unlock your role on Sounds Designed Discord server.
         </p>
-        <UButton icon="i-simple-icons-github" class="relative px-7 max-w-fit hover:bg-neutral-700" variant="outline"
+        <UButton
+          icon="i-simple-icons-github" class="relative px-7 max-w-fit hover:bg-neutral-700" variant="outline"
           color="neutral" aria-label="connect with GitHub" label="Connect with GitHub" to="/connect/github" external />
       </div>
 
       <!-- linked to github -->
       <div v-else-if="linked.github" class="w-full h-full">
         <img v-if="canUnlockNuxterBadge" src="/card-gradient-bg.svg" class="absolute inset-0 w-full rounded-lg" alt="">
-        <img v-if="canUnlockSoundsterBadge" src="/card-gradient-bg.svg" class="absolute inset-0 w-full rounded-lg" alt="">
+        <img
+          v-if="canUnlockSoundsterBadge" src="/card-gradient-bg.svg" class="absolute inset-0 w-full rounded-lg"
+          alt="">
         <img v-if="canUnlockUIProBadge" src="/card-gradient-bg.svg" class="absolute inset-0 w-full rounded-lg" alt="">
 
         <div class="absolute right-2 top-2 z-50">
-          <UButton class="transitions-colors duration-200" to="/logout" external size="xs" icon="i-ph-power"
+          <UButton
+            class="transitions-colors duration-200" to="/logout" external size="xs" icon="i-ph-power"
             label="logout" color="neutral" variant="ghost" @click.stop />
         </div>
         <div class="absolute left-0 right-0 flex justify-center bottom-0">
-          <ConfettiExplosion v-if="showConfetti" :force="0.7" :colors="['#00DC82']" :particle-size="4"
+          <ConfettiExplosion
+            v-if="showConfetti" :force="0.7" :colors="['#00DC82']" :particle-size="4"
             :particle-count="200" />
         </div>
         <div class="absolute left-0 right-0 flex justify-center -bottom-4 gap-x-2 px-2">
-          <UButton class="relative z-50 truncate" color="neutral" variant="outline" :icon="!canUnlockADiscordBadge
-              ? 'i-ph-smiley'
-              : !linked.discord
-                ? 'i-simple-icons-discord'
-                : 'i-heroicons-check-circle-solid'
+          <UButton
+            class="relative z-50 truncate" color="neutral" variant="outline" :icon="!canUnlockADiscordBadge
+            ? 'i-ph-smiley'
+            : !linked.discord
+              ? 'i-simple-icons-discord'
+              : 'i-heroicons-check-circle-solid'
             " :aria-label="linked.discord ? badgeName : 'Unlock badge(s)'"
             :label="linked.discord ? badgeName : 'Unlock badge(s)'"
             :to="!linked.discord ? '/connect/discord' : undefined" external @click="unlockButton" />
-          <UButton v-if="linked.github" color="neutral" variant="outline" class="hidden xl:flex z-50"
+          <UButton
+            v-if="linked.github" color="neutral" variant="outline" class="hidden xl:flex z-50"
             icon="i-ph-share-network" aria-label="Share my Soundster profile" :to="`/${contributor.username}`"
             label="Share my Soundster profile" @click.stop />
         </div>
@@ -135,10 +143,12 @@ const columns: TableColumn<Score>[] = [
               <span class="text-white text-lg">{{ format(contributor.score) }}<span
                   class="text-base text-neutral-200 pl-0.75">pts</span></span>
 
-              <UModal class="relative" title="How is the score calculated?" :ui="{
+              <UModal
+                class="relative" title="How is the score calculated?" :ui="{
                 body: 'p-0 sm:p-0',
               }">
-                <UButton variant="ghost" icon="i-ph-info" color="neutral"
+                <UButton
+                  variant="ghost" icon="i-ph-info" color="neutral"
                   class="ml-1 transitions-color duration-200 z-10" aria-label="show score table" />
                 <template #body>
                   <UTable class="overflow-x-auto" :data="detailedScore" :columns="columns" />
@@ -152,14 +162,16 @@ const columns: TableColumn<Score>[] = [
               <span><span class="text-white font-medium">{{ format(contributor.merged_pull_requests) }}</span> merged
                 pull
                 request{{ contributor.merged_pull_requests > 1 ? 's' : '' }}</span>
-              <UCheckbox v-model="hasMergedPullRequests" :ui="{
+              <UCheckbox
+                v-model="hasMergedPullRequests" :ui="{
                 base: 'h-5 w-5',
               }" disabled />
             </div>
             <div v-if="false" class="flex items-center justify-between gap-2">
               <span><span class="text-white font-medium">{{ format(contributor.helpful_issues) }}</span> helpful issue{{
                 contributor.helpful_issues > 1 ? 's' : '' }}</span>
-              <UCheckbox v-model="hasHelpfulIssues" :ui="{
+              <UCheckbox
+                v-model="hasHelpfulIssues" :ui="{
                 base: 'h-5 w-5',
               }" disabled />
             </div>
@@ -167,7 +179,8 @@ const columns: TableColumn<Score>[] = [
               <span><span class="text-white font-medium">{{ format(contributor.helpful_comments) }}</span> helpful
                 comment{{
                   contributor.helpful_comments > 1 ? 's' : '' }}</span>
-              <UCheckbox v-model="hasHelpfulComments" :ui="{
+              <UCheckbox
+                v-model="hasHelpfulComments" :ui="{
                 base: 'h-5 w-5',
               }" disabled />
             </div>
