@@ -5,7 +5,7 @@ const format = useNumberFormatter()
 </script>
 
 <template>
-  <div class="rounded-xl border p-6 text-center flex flex-col items-center justify-end relative h-full border-violet-400 overflow-hidden">
+  <div class="rounded-xl border p-6 text-center flex flex-col items-center justify-end relative h-full border-green-400 overflow-hidden">
     <div class="absolute top-0 left-0 right-0">
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -40,14 +40,14 @@ const format = useNumberFormatter()
                 cx="123.171"
                 cy="90.804"
                 r="4.871"
-                stroke="#8B5CF6"
+                stroke="#00DC82"
                 stroke-width="1.624"
               />
               <circle
                 cx="77.33"
                 cy="123.123"
                 r="4.871"
-                stroke="#8B5CF6"
+                stroke="#00DC82"
                 stroke-opacity=".45"
                 stroke-width="1.624"
               />
@@ -55,21 +55,21 @@ const format = useNumberFormatter()
                 cx="238.87"
                 cy="90.829"
                 r="4.871"
-                stroke="#8B5CF6"
+                stroke="#00DC82"
                 stroke-width="1.624"
               />
               <circle
                 cx="200.717"
                 cy="58.341"
                 r="4.871"
-                stroke="#8B5CF6"
+                stroke="#00DC82"
                 stroke-width="1.624"
               />
               <circle
                 cx="87.128"
                 cy="25.871"
                 r="4.871"
-                stroke="#8B5CF6"
+                stroke="#00DC82"
                 stroke-opacity=".44"
                 stroke-width="1.624"
               />
@@ -77,7 +77,7 @@ const format = useNumberFormatter()
                 cx="311.117"
                 cy="58.429"
                 r="4.871"
-                stroke="#8B5CF6"
+                stroke="#00DC82"
                 stroke-opacity=".3"
                 stroke-width="1.624"
               />
@@ -85,7 +85,7 @@ const format = useNumberFormatter()
                 cx="306.246"
                 cy="90.66"
                 r="4.871"
-                stroke="#8B5CF6"
+                stroke="#00DC82"
                 stroke-opacity=".64"
                 stroke-width="1.624"
               />
@@ -93,7 +93,7 @@ const format = useNumberFormatter()
                 cx="345.21"
                 cy="123.13"
                 r="4.871"
-                stroke="#8B5CF6"
+                stroke="#00DC82"
                 stroke-opacity=".1"
                 stroke-width="1.624"
               />
@@ -110,16 +110,16 @@ const format = useNumberFormatter()
             gradientUnits="userSpaceOnUse"
           >
             <stop
-              stop-color="#8B5CF6"
+              stop-color="#00DC82"
               stop-opacity="0"
             />
             <stop
               offset=".557"
-              stop-color="#8B5CF6"
+              stop-color="#00DC82"
             />
             <stop
               offset="1"
-              stop-color="#8B5CF6"
+              stop-color="#00DC82"
               stop-opacity="0"
             />
           </radialGradient>
@@ -131,10 +131,10 @@ const format = useNumberFormatter()
             y2="289.244"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-color="#8B5CF6" />
+            <stop stop-color="#00DC82" />
             <stop
               offset="1"
-              stop-color="#8B5CF6"
+              stop-color="#00DC82"
               stop-opacity="0"
             />
           </linearGradient>

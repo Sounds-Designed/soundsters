@@ -5,7 +5,7 @@ const format = useNumberFormatter()
 </script>
 
 <template>
-  <div class="rounded-xl border p-6 text-center flex flex-col items-center justify-end relative h-full border-yellow-400 overflow-hidden">
+  <div class="rounded-xl border p-6 text-center flex flex-col items-center justify-end relative h-full border-green-400 overflow-hidden">
     <div class="absolute top-0 left-0 right-0">
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -38,7 +38,7 @@ const format = useNumberFormatter()
                 height="37"
                 x="82"
                 y="-10"
-                fill="#F7D14C"
+                fill="#00DC82"
                 fill-opacity=".1"
                 rx="4"
               />
@@ -73,7 +73,7 @@ const format = useNumberFormatter()
                 height="36"
                 x="82.5"
                 y="-9.5"
-                stroke="#F7D14C"
+                stroke="#00DC82"
                 stroke-opacity=".4"
                 rx="3.5"
               />
@@ -82,7 +82,7 @@ const format = useNumberFormatter()
                 height="37"
                 x="26"
                 y="-10"
-                fill="#F7D14C"
+                fill="#00DC82"
                 fill-opacity=".1"
                 rx="4"
               />
@@ -101,7 +101,7 @@ const format = useNumberFormatter()
                 height="36"
                 x="26.5"
                 y="-9.5"
-                stroke="#F7D14C"
+                stroke="#00DC82"
                 stroke-opacity=".4"
                 rx="3.5"
               />
@@ -110,7 +110,7 @@ const format = useNumberFormatter()
                 height="37"
                 x="138"
                 y="-10"
-                fill="#F7D14C"
+                fill="#00DC82"
                 fill-opacity=".1"
                 rx="4"
               />
@@ -133,7 +133,7 @@ const format = useNumberFormatter()
                 height="36"
                 x="138.5"
                 y="-9.5"
-                stroke="#F7D14C"
+                stroke="#00DC82"
                 stroke-opacity=".4"
                 rx="3.5"
               />
@@ -142,7 +142,7 @@ const format = useNumberFormatter()
                 height="37"
                 x="194"
                 y="-10"
-                fill="#F7D14C"
+                fill="#00DC82"
                 fill-opacity=".1"
                 rx="4"
               />
@@ -155,7 +155,7 @@ const format = useNumberFormatter()
                 height="36"
                 x="194.5"
                 y="-9.5"
-                stroke="#F7D14C"
+                stroke="#00DC82"
                 stroke-opacity=".4"
                 rx="3.5"
               />
@@ -165,7 +165,7 @@ const format = useNumberFormatter()
                   height="37"
                   x="250"
                   y="-10"
-                  fill="#F7D14C"
+                  fill="#00DC82"
                   fill-opacity=".1"
                   rx="4"
                 />
@@ -210,7 +210,7 @@ const format = useNumberFormatter()
                   height="36"
                   x="250.5"
                   y="-9.5"
-                  stroke="#F7D14C"
+                  stroke="#00DC82"
                   stroke-opacity=".4"
                   rx="3.5"
                 />
@@ -221,7 +221,7 @@ const format = useNumberFormatter()
                   height="37"
                   x="306"
                   y="-10"
-                  fill="#F7D14C"
+                  fill="#00DC82"
                   fill-opacity=".1"
                   rx="4"
                 />
@@ -276,7 +276,7 @@ const format = useNumberFormatter()
                   height="36"
                   x="306.5"
                   y="-9.5"
-                  stroke="#F7D14C"
+                  stroke="#00DC82"
                   stroke-opacity=".4"
                   rx="3.5"
                 />
@@ -286,7 +286,7 @@ const format = useNumberFormatter()
                 height="37"
                 x="110"
                 y="41"
-                fill="#F7D14C"
+                fill="#00DC82"
                 fill-opacity=".1"
                 rx="4"
               />
@@ -341,7 +341,7 @@ const format = useNumberFormatter()
                 height="36"
                 x="110.5"
                 y="41.5"
-                stroke="#F7D14C"
+                stroke="#00DC82"
                 stroke-opacity=".4"
                 rx="3.5"
               />
@@ -350,7 +350,7 @@ const format = useNumberFormatter()
                 height="37"
                 x="54"
                 y="41"
-                fill="#F7D14C"
+                fill="#00DC82"
                 fill-opacity=".1"
                 rx="4"
               />
@@ -363,7 +363,7 @@ const format = useNumberFormatter()
                 height="36"
                 x="54.5"
                 y="41.5"
-                stroke="#F7D14C"
+                stroke="#00DC82"
                 stroke-opacity=".4"
                 rx="3.5"
               />
@@ -372,7 +372,7 @@ const format = useNumberFormatter()
                 height="37"
                 x="-2"
                 y="41"
-                fill="#F7D14C"
+                fill="#00DC82"
                 fill-opacity=".1"
                 rx="4"
               />
@@ -417,7 +417,7 @@ const format = useNumberFormatter()
                 height="36"
                 x="-1.5"
                 y="41.5"
-                stroke="#F7D14C"
+                stroke="#00DC82"
                 stroke-opacity=".4"
                 rx="3.5"
               />
@@ -426,7 +426,7 @@ const format = useNumberFormatter()
                 height="37"
                 x="82"
                 y="92"
-                fill="#F7D14C"
+                fill="#00DC82"
                 fill-opacity=".1"
                 rx="4"
               />
@@ -461,7 +461,7 @@ const format = useNumberFormatter()
                 height="36"
                 x="82.5"
                 y="92.5"
-                stroke="#F7D14C"
+                stroke="#00DC82"
                 stroke-opacity=".4"
                 rx="3.5"
               />
@@ -470,7 +470,7 @@ const format = useNumberFormatter()
                 height="37"
                 x="26"
                 y="92"
-                fill="#F7D14C"
+                fill="#00DC82"
                 fill-opacity=".1"
                 rx="4"
               />
@@ -525,7 +525,7 @@ const format = useNumberFormatter()
                 height="36"
                 x="26.5"
                 y="92.5"
-                stroke="#F7D14C"
+                stroke="#00DC82"
                 stroke-opacity=".4"
                 rx="3.5"
               />
@@ -534,7 +534,7 @@ const format = useNumberFormatter()
                 height="37"
                 x="166"
                 y="41"
-                fill="#F7D14C"
+                fill="#00DC82"
                 fill-opacity=".1"
                 rx="4"
               />
@@ -579,7 +579,7 @@ const format = useNumberFormatter()
                 height="36"
                 x="166.5"
                 y="41.5"
-                stroke="#F7D14C"
+                stroke="#00DC82"
                 stroke-opacity=".4"
                 rx="3.5"
               />
@@ -588,7 +588,7 @@ const format = useNumberFormatter()
                 height="37"
                 x="137"
                 y="92"
-                fill="#F7D14C"
+                fill="#00DC82"
                 fill-opacity=".1"
                 rx="4"
               />
@@ -611,7 +611,7 @@ const format = useNumberFormatter()
                 height="36"
                 x="137.5"
                 y="92.5"
-                stroke="#F7D14C"
+                stroke="#00DC82"
                 stroke-opacity=".4"
                 rx="3.5"
               />
@@ -621,7 +621,7 @@ const format = useNumberFormatter()
                   height="37"
                   x="222"
                   y="41"
-                  fill="#F7D14C"
+                  fill="#00DC82"
                   fill-opacity=".1"
                   rx="4"
                 />
@@ -656,7 +656,7 @@ const format = useNumberFormatter()
                   height="36"
                   x="222.5"
                   y="41.5"
-                  stroke="#F7D14C"
+                  stroke="#00DC82"
                   stroke-opacity=".4"
                   rx="3.5"
                 />
@@ -667,7 +667,7 @@ const format = useNumberFormatter()
                   height="37"
                   x="278"
                   y="41"
-                  fill="#F7D14C"
+                  fill="#00DC82"
                   fill-opacity=".1"
                   rx="4"
                 />
@@ -690,7 +690,7 @@ const format = useNumberFormatter()
                   height="36"
                   x="278.5"
                   y="41.5"
-                  stroke="#F7D14C"
+                  stroke="#00DC82"
                   stroke-opacity=".4"
                   rx="3.5"
                 />
@@ -701,7 +701,7 @@ const format = useNumberFormatter()
                   height="37"
                   x="334"
                   y="41"
-                  fill="#F7D14C"
+                  fill="#00DC82"
                   fill-opacity=".1"
                   rx="4"
                 />
@@ -720,7 +720,7 @@ const format = useNumberFormatter()
                   height="36"
                   x="334.5"
                   y="41.5"
-                  stroke="#F7D14C"
+                  stroke="#00DC82"
                   stroke-opacity=".4"
                   rx="3.5"
                 />
@@ -730,7 +730,7 @@ const format = useNumberFormatter()
                 height="37"
                 x="194"
                 y="92"
-                fill="#F7D14C"
+                fill="#00DC82"
                 fill-opacity=".1"
                 rx="4"
               />
@@ -749,7 +749,7 @@ const format = useNumberFormatter()
                 height="36"
                 x="194.5"
                 y="92.5"
-                stroke="#F7D14C"
+                stroke="#00DC82"
                 stroke-opacity=".4"
                 rx="3.5"
               />
@@ -759,7 +759,7 @@ const format = useNumberFormatter()
                   height="37"
                   x="250"
                   y="92"
-                  fill="#F7D14C"
+                  fill="#00DC82"
                   fill-opacity=".1"
                   rx="4"
                 />
@@ -814,7 +814,7 @@ const format = useNumberFormatter()
                   height="36"
                   x="250.5"
                   y="92.5"
-                  stroke="#F7D14C"
+                  stroke="#00DC82"
                   stroke-opacity=".4"
                   rx="3.5"
                 />
@@ -825,7 +825,7 @@ const format = useNumberFormatter()
                   height="37"
                   x="306"
                   y="92"
-                  fill="#F7D14C"
+                  fill="#00DC82"
                   fill-opacity=".1"
                   rx="4"
                 />
@@ -870,7 +870,7 @@ const format = useNumberFormatter()
                   height="36"
                   x="306.5"
                   y="92.5"
-                  stroke="#F7D14C"
+                  stroke="#00DC82"
                   stroke-opacity=".4"
                   rx="3.5"
                 />
@@ -979,10 +979,10 @@ const format = useNumberFormatter()
             y2="262.545"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-color="#F7D14C" />
+            <stop stop-color="#00DC82" />
             <stop
               offset="1"
-              stop-color="#F7D14C"
+              stop-color="#00DC82"
               stop-opacity="0"
             />
           </linearGradient>

@@ -4,7 +4,7 @@ const format = useNumberFormatter()
 </script>
 
 <template>
-  <div class="rounded-xl border p-6 text-center flex flex-col items-center justify-end relative h-full border-blue-400 overflow-hidden">
+  <div class="rounded-xl border p-6 text-center flex flex-col items-center justify-end relative h-full border-green-400 overflow-hidden">
     <div class="absolute top-0 left-0 right-0">
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -48,7 +48,7 @@ const format = useNumberFormatter()
                   clip-rule="evenodd"
                 />
                 <path
-                  fill="#40BBFF"
+                  fill="#00DC82"
                   fill-opacity=".5"
                   fill-rule="evenodd"
                   d="M266.707 13.334a.208.208 0 0 0-.208.208V23.96c0 .115.093.208.208.208h2.084a.624.624 0 0 1 .625.625v2.659l3.1-3.1a.625.625 0 0 1 .442-.184h8.333a.208.208 0 0 0 .208-.208V13.542a.209.209 0 0 0-.208-.208h-14.584Zm-1.458.208c0-.805.653-1.458 1.458-1.458h14.584c.805 0 1.458.653 1.458 1.458V23.96a1.456 1.456 0 0 1-1.458 1.458h-8.075l-2.978 2.978a1.215 1.215 0 0 1-2.072-.858v-2.12h-1.459a1.46 1.46 0 0 1-1.458-1.458V13.542Z"
@@ -56,7 +56,7 @@ const format = useNumberFormatter()
                 />
               </g>
               <g
-                fill="#40BBFF"
+                fill="#00DC82"
                 clip-path="url(#h)"
               >
                 <rect
@@ -107,7 +107,7 @@ const format = useNumberFormatter()
                   clip-rule="evenodd"
                 />
                 <path
-                  fill="#40BBFF"
+                  fill="#00DC82"
                   fill-opacity=".5"
                   fill-rule="evenodd"
                   d="M289.707 58.334a.208.208 0 0 0-.208.208V68.96c0 .115.093.208.208.208h2.084a.624.624 0 0 1 .625.625v2.659l3.1-3.1a.625.625 0 0 1 .442-.184h8.333a.208.208 0 0 0 .208-.208V58.542a.209.209 0 0 0-.208-.208h-14.584Zm-1.458.208c0-.805.653-1.458 1.458-1.458h14.584c.805 0 1.458.653 1.458 1.458V68.96a1.456 1.456 0 0 1-1.458 1.458h-8.075l-2.978 2.978a1.215 1.215 0 0 1-2.072-.858v-2.12h-1.459a1.46 1.46 0 0 1-1.458-1.458V58.542Z"
@@ -115,7 +115,7 @@ const format = useNumberFormatter()
                 />
               </g>
               <g
-                fill="#40BBFF"
+                fill="#00DC82"
                 clip-path="url(#l)"
               >
                 <rect
@@ -166,7 +166,7 @@ const format = useNumberFormatter()
                   clip-rule="evenodd"
                 />
                 <path
-                  fill="#40BBFF"
+                  fill="#00DC82"
                   fill-opacity=".5"
                   fill-rule="evenodd"
                   d="M268.707 103.334a.208.208 0 0 0-.208.208v10.417c0 .115.093.208.208.208h2.084a.625.625 0 0 1 .625.625v2.659l3.1-3.1a.622.622 0 0 1 .442-.184h8.333a.208.208 0 0 0 .208-.208v-10.417a.208.208 0 0 0-.208-.208h-14.584Zm-1.458.208c0-.805.653-1.458 1.458-1.458h14.584c.805 0 1.458.653 1.458 1.458v10.417a1.454 1.454 0 0 1-1.458 1.458h-8.075l-2.978 2.978a1.214 1.214 0 0 1-2.072-.859v-2.119h-1.459a1.458 1.458 0 0 1-1.458-1.458v-10.417Z"
@@ -184,7 +184,7 @@ const format = useNumberFormatter()
                   rx="4"
                 />
                 <path
-                  fill="#40BBFF"
+                  fill="#00DC82"
                   fill-rule="evenodd"
                   d="M118.707 103.334a.208.208 0 0 0-.208.208v10.417c0 .115.093.208.208.208h2.084a.625.625 0 0 1 .625.625v2.659l3.1-3.1a.622.622 0 0 1 .442-.184h8.333a.208.208 0 0 0 .208-.208v-10.417a.208.208 0 0 0-.208-.208h-14.584Zm-1.458.208c0-.805.653-1.458 1.458-1.458h14.584c.805 0 1.458.653 1.458 1.458v10.417a1.454 1.454 0 0 1-1.458 1.458h-8.075l-2.978 2.978a1.214 1.214 0 0 1-2.072-.859v-2.119h-1.459a1.458 1.458 0 0 1-1.458-1.458v-10.417Z"
                   clip-rule="evenodd"
@@ -263,10 +263,10 @@ const format = useNumberFormatter()
             y2="289.244"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-color="#40BBFF" />
+            <stop stop-color="#00DC82" />
             <stop
               offset="1"
-              stop-color="#40BBFF"
+              stop-color="#00DC82"
               stop-opacity="0"
             />
           </linearGradient>
@@ -280,11 +280,11 @@ const format = useNumberFormatter()
           >
             <stop
               offset=".234"
-              stop-color="#40BBFF"
+              stop-color="#00DC82"
             />
             <stop
               offset="1"
-              stop-color="#40BBFF"
+              stop-color="#00DC82"
               stop-opacity="0"
             />
           </linearGradient>
@@ -296,15 +296,15 @@ const format = useNumberFormatter()
             y2="36.5"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-color="#40BBFF" />
+            <stop stop-color="#00DC82" />
             <stop
               offset=".879"
-              stop-color="#40BBFF"
+              stop-color="#00DC82"
               stop-opacity="0"
             />
             <stop
               offset="1"
-              stop-color="#40BBFF"
+              stop-color="#00DC82"
               stop-opacity="0"
             />
           </linearGradient>
@@ -316,10 +316,10 @@ const format = useNumberFormatter()
             y2="66"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-color="#40BBFF" />
+            <stop stop-color="#00DC82" />
             <stop
               offset="1"
-              stop-color="#40BBFF"
+              stop-color="#00DC82"
               stop-opacity="0"
             />
           </linearGradient>
@@ -331,10 +331,10 @@ const format = useNumberFormatter()
             y2="73"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-color="#40BBFF" />
+            <stop stop-color="#00DC82" />
             <stop
               offset="1"
-              stop-color="#40BBFF"
+              stop-color="#00DC82"
               stop-opacity="0"
             />
           </linearGradient>
@@ -346,10 +346,10 @@ const format = useNumberFormatter()
             y2="123"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-color="#40BBFF" />
+            <stop stop-color="#00DC82" />
             <stop
               offset="1"
-              stop-color="#40BBFF"
+              stop-color="#00DC82"
               stop-opacity="0"
             />
           </linearGradient>
@@ -361,15 +361,15 @@ const format = useNumberFormatter()
             y2="126.5"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-color="#40BBFF" />
+            <stop stop-color="#00DC82" />
             <stop
               offset=".879"
-              stop-color="#40BBFF"
+              stop-color="#00DC82"
               stop-opacity="0"
             />
             <stop
               offset="1"
-              stop-color="#40BBFF"
+              stop-color="#00DC82"
               stop-opacity="0"
             />
           </linearGradient>
@@ -381,10 +381,10 @@ const format = useNumberFormatter()
             y2="129"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-color="#40BBFF" />
+            <stop stop-color="#00DC82" />
             <stop
               offset="1"
-              stop-color="#40BBFF"
+              stop-color="#00DC82"
               stop-opacity="0"
             />
           </linearGradient>
@@ -396,10 +396,10 @@ const format = useNumberFormatter()
             y2="118"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-color="#40BBFF" />
+            <stop stop-color="#00DC82" />
             <stop
               offset="1"
-              stop-color="#40BBFF"
+              stop-color="#00DC82"
               stop-opacity="0"
             />
           </linearGradient>
@@ -411,10 +411,10 @@ const format = useNumberFormatter()
             y2="25.5"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-color="#40BBFF" />
+            <stop stop-color="#00DC82" />
             <stop
               offset="1"
-              stop-color="#40BBFF"
+              stop-color="#00DC82"
               stop-opacity="0"
             />
           </linearGradient>
@@ -426,10 +426,10 @@ const format = useNumberFormatter()
             y2="41.223"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-color="#40BBFF" />
+            <stop stop-color="#00DC82" />
             <stop
               offset="1"
-              stop-color="#40BBFF"
+              stop-color="#00DC82"
               stop-opacity="0"
             />
           </linearGradient>
@@ -441,10 +441,10 @@ const format = useNumberFormatter()
             y2="70.5"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-color="#40BBFF" />
+            <stop stop-color="#00DC82" />
             <stop
               offset="1"
-              stop-color="#40BBFF"
+              stop-color="#00DC82"
               stop-opacity="0"
             />
           </linearGradient>
@@ -456,10 +456,10 @@ const format = useNumberFormatter()
             y2="86.223"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-color="#40BBFF" />
+            <stop stop-color="#00DC82" />
             <stop
               offset="1"
-              stop-color="#40BBFF"
+              stop-color="#00DC82"
               stop-opacity="0"
             />
           </linearGradient>
@@ -471,10 +471,10 @@ const format = useNumberFormatter()
             y2="115.5"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-color="#40BBFF" />
+            <stop stop-color="#00DC82" />
             <stop
               offset="1"
-              stop-color="#40BBFF"
+              stop-color="#00DC82"
               stop-opacity="0"
             />
           </linearGradient>
@@ -486,10 +486,10 @@ const format = useNumberFormatter()
             y2="131.223"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-color="#40BBFF" />
+            <stop stop-color="#00DC82" />
             <stop
               offset="1"
-              stop-color="#40BBFF"
+              stop-color="#00DC82"
               stop-opacity="0"
             />
           </linearGradient>
