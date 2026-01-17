@@ -10,25 +10,21 @@ const links: DropdownMenuItem[] = [
     target: '_blank',
   },
   {
-    label: 'Sound UI',
+    label: 'Soundsters',
+    disabled: true,
+    description: 'Are you a Soundster?',
+    to: 'https://soundsters.soundsdesigned.com/?utm_source=soundsters&utm_medium=dropdown&utm_campaign=home',
+    icon: 'i-simple-icons-nuxtdotjs',
+    target: '_blank',
+    color: "primary"
+  },
+  {
+    label: 'Sound UI (Under Construction)',
     description: 'Sound UI documentation',
     to: 'https://ui.soundsdesigned.com/?utm_source=soundsters&utm_medium=dropdown&utm_campaign=home',
     icon: 'i-simple-icons-nuxtdotjs',
     target: '_blank',
-  },
-  {
-    label: 'Nuxt.com',
-    description: 'Nuxt documentation',
-    to: 'https://nuxt.com/?utm_source=soundsters&utm_medium=dropdown&utm_campaign=home',
-    icon: 'i-simple-icons-nuxtdotjs',
-    target: '_blank',
-  },
-  {
-    label: 'Nuxt.new',
-    description: 'Nuxt templates',
-    to: 'https://nuxt.new/?utm_source=soundsters&utm_medium=dropdown&utm_campaign=home',
-    icon: 'i-simple-icons-nuxtdotjs',
-    target: '_blank',
+    disabled: true
   },
 ]
 </script>
@@ -46,8 +42,12 @@ const links: DropdownMenuItem[] = [
         </NuxtLink>
         <UDropdownMenu
           :items="links"
+          :ui="{ item: 'group', itemLeadingIcon: 'group-data-highlighted:text-primary text-white hover:text-primary', itemWrapper: 'group-data-highlighted:text-primary transition-colors'}"
           size="xl"
         >
+                <template #item-leading>
+          <TheIcon class="iconify i-simple-icons:nuxtdotjs shrink-0 group-data-[state=open]:text-default transition-colors size-6 group-data-highlighted:fill-primary group-data-highlighted:text-primary text-white hover:text-primary" />
+        </template>
           <UButton
             variant="ghost"
             color="neutral"
