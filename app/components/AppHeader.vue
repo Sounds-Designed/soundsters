@@ -55,9 +55,9 @@ const links: DropdownMenuItem[] = [
         </UButton>
         <div class="hidden sm:block h-8 w-px bg-neutral-700 -mr-2 sm:-mr-6" />
         <UButton to="http://go.soundsdesigned.com/github" class="flex gap-x-2 items-center" variant="link"
-          color="neutral" size="xl" target="_blank" aria-label="star us">
+          color="neutral" size="xl" target="_blank" aria-label="follow us">
           <UIcon name="i-simple-icons-github" class="h-5 w-5 sm:ml-4" />
-          <span class="hidden sm:block">Star us</span>
+          <span class="hidden sm:block">Follow us</span>
         </UButton>
       </div>
     </UContainer>
