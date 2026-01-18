@@ -23,7 +23,7 @@ const socialLinks = [
     <UContainer class="flex justify-between gap-x-4 items-center h-20 sm:h-16">
       <span class="text-neutral-300 text-sm">
         Made with love by Sounds Designed 💚 (<NuxtLink
-          to="https://go.soundsdesigned.com/github"
+          to="https://go.soundsdesigned.com/soundsters-repo"
           target="_blank"
           class="underline hover:text-white"
         >source code</NuxtLink>).
