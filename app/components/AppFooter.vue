@@ -6,7 +6,7 @@ const socialLinks = [
   //   icon: 'i-simple-icons-twitter',
   // },
   {
-    to: 'https://go.soundsdesigned.com/ui-github',
+    to: 'https://go.soundsdesigned.com/ui-repo',
     alt: 'Sound UI GitHub Repository',
     icon: 'i-simple-icons-github',
   },
