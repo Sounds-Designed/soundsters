@@ -12,13 +12,13 @@ const unlockList = ['1 pull request merged', '1 helpful issue (3+ reactions)', '
         <p class="text-base lg:text-lg lg:leading-8">
           Discover your contributions on
           <ULink
-            to="https://github.com/Sounds-Designed/ui"
+            to="https://go.soundsdesigned.com/ui-repo"
             target="_blank"
           >Sound UI</ULink> or other downloads on <ULink
             to="https://soundsdesigned.com"
             target="_blank"
           >Sounds Designed</ULink>, unlocking roles on <ULink
-            to="https://discord.com/invite/sounds-designed"
+            to="https://go.soundsdesigned.com/discord"
             target="_blank"
           >Sounds Designed Discord server</ULink> and share your Soundster profile.
         </p>

@@ -76,7 +76,7 @@ function backToHome() {
             <div class="flex flex-col items-center gap-4">
               <div class="flex flex-col gap-y-4.5">
                 <UButton
-                  :to="`https://github.com/${contributor.username}`"
+                  :to="`https://go.soundsdesigned.com/contributors/${contributor.username}`"
                   color="neutral"
                   variant="ghost"
                   size="lg"
@@ -178,10 +178,10 @@ function backToHome() {
                       </p>
                       <p class="text-neutral-400 text-center">
                         Example : <ULink
-                          to="https://github.com/codetheorist"
+                          to="https://go.soundsdesigned.com/codetheorist-github"
                           target="_blank"
                         >CodeTheorist profile</ULink> with <ULink
-                          to="https://raw.githubusercontent.com/codetheorist/codetheorist/main/README.md"
+                          to="https://go.soundsdesigned.com/profile-readme-example"
                           target="_blank"
                         >this template</ULink>
                       </p>

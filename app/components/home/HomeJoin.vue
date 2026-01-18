@@ -10,7 +10,7 @@
       </p>
       <div class="pt-8 flex flex-col gap-y-4 sm:flex-row gap-x-4 items-center">
         <UButton
-          to="https://github.com/Sounds-Designed/ui"
+          to="https://go.soundsdesigned.com/ui-repo"
           icon="i-simple-icons-github"
           label="Sound UI Repository"
           class="rounded-full px-7"
