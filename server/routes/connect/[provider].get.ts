@@ -23,21 +23,21 @@ export default defineEventHandler(async (event) => {
     )
   }
 
-  // if (provider === 'discord' && (refresh || !session.data.discordId)) {
-  //   const state = randomUUID()
-  //   setCookie(event, 'state', state)
+  if (provider === 'discord' && (refresh || !session.data.discordId)) {
+    const state = randomUUID()
+    setCookie(event, 'state', state)
 
-  //   return await sendRedirect(
-  //     event,
-  //     withQuery('https://discord.com/api/oauth2/authorize', {
-  //       client_id: config.discord.clientId,
-  //       redirect_uri: joinURL(url.origin, 'oauth/discord'),
-  //       response_type: 'code',
-  //       scope: 'identify guilds.join',
-  //       state,
-  //     }),
-  //   )
-  // }
+    return await sendRedirect(
+      event,
+      withQuery('https://discord.com/api/oauth2/authorize', {
+        client_id: config.discord.clientId,
+        redirect_uri: joinURL(url.origin, 'oauth/discord'),
+        response_type: 'code',
+        scope: 'identify guilds.join role_connections.write',
+        state,
+      }),
+    )
+  }
 
   await sendRedirect(event, '/')
 })

@@ -6,6 +6,7 @@ declare module 'h3' {
     canUnlockUIProBadge: boolean
     nuxterRoleAdded: boolean
     soundsterRoleAdded: boolean
+    maintainerRoleAdded: boolean;
   }
 }
 
