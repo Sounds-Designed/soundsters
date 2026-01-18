@@ -6,7 +6,6 @@ const links: DropdownMenuItem[] = [
     label: 'Sounds Designed',
     description: 'Sounds Designed website',
     to: 'https://soundsdesigned.com/?utm_source=soundsters&utm_medium=dropdown&utm_campaign=home',
-    icon: 'i-simple-icons-nuxtdotjs',
     target: '_blank',
   },
   {
@@ -14,7 +13,6 @@ const links: DropdownMenuItem[] = [
     disabled: true,
     description: 'Are you a Soundster?',
     to: 'https://soundsters.soundsdesigned.com/?utm_source=soundsters&utm_medium=dropdown&utm_campaign=home',
-    icon: 'i-simple-icons-nuxtdotjs',
     target: '_blank',
     color: "primary"
   },
@@ -22,7 +20,7 @@ const links: DropdownMenuItem[] = [
     label: 'Sound UI (Under Construction)',
     description: 'Sound UI documentation',
     to: 'https://ui.soundsdesigned.com/?utm_source=soundsters&utm_medium=dropdown&utm_campaign=home',
-    icon: 'i-simple-icons-nuxtdotjs',
+    icon: 'i-lucide-construction',
     target: '_blank',
     disabled: true
   },
@@ -39,9 +37,10 @@ const links: DropdownMenuItem[] = [
         <UDropdownMenu :items="links"
           :ui="{ item: 'data-highlighted:text-highlighted data-[state=open]:text-highlighted before:bg-linear-to-b  data-highlighted:before:from-[#3d3d3d]!  data-highlighted:before:to-[#2d2d2d]! data-[state=open]:before:from-[#3d3d3d]! data-[state=open]:before:to-[#2d2d2d]!', content: 'bg-linear-to-b from-[#3d3d3d] to-[#2d2d2d] ring-[#3d3d3d] border-none rounded-lg', itemLeadingIcon: 'rounded-lg transition-colors' }"
           size="xl">
-          <template #item-leading>
-            <TheIcon
-              class="iconify i-simple-icons:nuxtdotjs shrink-0 group-data-[state=open]:text-default transition-colors size-6 group-data-highlighted:fill-primary group-data-highlighted:text-primary text-white hover:text-primary" />
+          <template #item-leading="{ item }">
+            <UIcon v-if="item.icon" :name="item.icon" class="iconify shrink-0 group-data-[state=open]:text-default transition-colors size-6 group-data-highlighted:fill-primary group-data-highlighted:text-primary text-white" />
+            <TheIcon v-else
+              class="iconify i-simple-icons:nuxtdotjs shrink-0 group-data-[state=open]:text-default transition-colors size-6 group-data-highlighted:fill-primary group-data-highlighted:text-primary text-white" />
           </template>
           <UButton variant="ghost" color="primary" :ui="{base:'bg-[#2d2d2d] hover:bg-[#3d3d3d]'}" icon="i-ph-caret-down-fill" square
             class="ml-1" aria-label="dropdown button" />
