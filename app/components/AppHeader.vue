@@ -1,7 +1,18 @@
 <script setup lang="ts">
 import type { DropdownMenuItem } from '@nuxt/ui'
 
-const links: DropdownMenuItem[] = [
+interface LinkData {
+  label: string;
+  description: string;
+  to: string;
+  target: string;
+  icon?: string;
+  color?: string;
+  iconColor?: string;
+  iconClasses?: string;
+}
+
+const links: DropdownMenuItem[] & LinkData[] = [
   {
     label: 'Sounds Designed',
     description: 'Sounds Designed website',
@@ -21,10 +32,21 @@ const links: DropdownMenuItem[] = [
     description: 'Sound UI documentation',
     to: 'https://ui.soundsdesigned.com/?utm_source=soundsters&utm_medium=dropdown&utm_campaign=home',
     icon: 'i-lucide-construction',
+    iconColor: 'warning',
     target: '_blank',
     disabled: true
   },
 ]
+
+const getIconClasses = (item: LinkData) => {
+  let classes = 'iconify shrink-0 transition-colors size-6 group-data-highlighted:fill-primary group-data-highlighted:text-primary';
+
+  classes += item.iconColor ? ` text-${item.iconColor}` : ' text-white'
+
+  if(item.iconClasses) classes += ` ${item.iconClasses}`;
+
+  return classes;
+}
 </script>
 
 <template>
@@ -38,9 +60,9 @@ const links: DropdownMenuItem[] = [
           :ui="{ item: 'data-highlighted:text-highlighted data-[state=open]:text-highlighted before:bg-linear-to-b  data-highlighted:before:from-[#3d3d3d]!  data-highlighted:before:to-[#2d2d2d]! data-[state=open]:before:from-[#3d3d3d]! data-[state=open]:before:to-[#2d2d2d]!', content: 'bg-linear-to-b from-[#3d3d3d] to-[#2d2d2d] ring-[#3d3d3d] border-none rounded-lg', itemLeadingIcon: 'rounded-lg transition-colors' }"
           size="xl">
           <template #item-leading="{ item }">
-            <UIcon v-if="item.icon" :name="item.icon" class="iconify shrink-0 group-data-[state=open]:text-default transition-colors size-6 group-data-highlighted:fill-primary group-data-highlighted:text-primary text-white" />
+            <UIcon v-if="item.icon" :name="item.icon" :class="getIconClasses(item)" />
             <TheIcon v-else
-              class="iconify i-simple-icons:nuxtdotjs shrink-0 group-data-[state=open]:text-default transition-colors size-6 group-data-highlighted:fill-primary group-data-highlighted:text-primary text-white" />
+              :class="getIconClasses(item)" />
           </template>
           <UButton variant="ghost" color="primary" :ui="{base:'bg-[#2d2d2d] hover:bg-[#3d3d3d]'}" icon="i-ph-caret-down-fill" square
             class="ml-1" aria-label="dropdown button" />
