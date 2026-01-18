@@ -6,7 +6,7 @@ const socialLinks = [
   //   icon: 'i-simple-icons-twitter',
   // },
   {
-    to: 'https://github.com/Sounds-Designed/sound-ui',
+    to: 'https://go.soundsdesigned.com/ui-github',
     alt: 'Sound UI GitHub Repository',
     icon: 'i-simple-icons-github',
   },
@@ -23,7 +23,7 @@ const socialLinks = [
     <UContainer class="flex justify-between gap-x-4 items-center h-20 sm:h-16">
       <span class="text-neutral-300 text-sm">
         Made with love by Sounds Designed 💚 (<NuxtLink
-          to="https://github.com/nuxt/nuxters"
+          to="https://go.soundsdesigned.com/github"
           target="_blank"
           class="underline hover:text-white"
         >source code</NuxtLink>).

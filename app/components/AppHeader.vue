@@ -47,14 +47,14 @@ const links: DropdownMenuItem[] = [
             class="ml-1" aria-label="dropdown button" />
         </UDropdownMenu>
       </div>
-      <div v-if="false" class="flex items-center sm:gap-x-4 text-white font-medium">
-        <UButton v-if="false" class="flex items-center sm:-mr-2" to="https://go.nuxt.com/discord" target="_blank"
+      <div class="flex items-center sm:gap-x-4 text-white font-medium">
+        <UButton class="flex items-center sm:-mr-2" to="https://go.soundsdesigned.com/discord" target="_blank"
           variant="link" color="neutral" size="xl" aria-label="join us">
           <UIcon name="i-simple-icons-discord" class="h-5 w-5" />
           <span class="hidden sm:block">Join us</span>
         </UButton>
         <div class="hidden sm:block h-8 w-px bg-neutral-700 -mr-2 sm:-mr-6" />
-        <UButton v-if="false" to="http://go.nuxt.com/github" class="flex gap-x-2 items-center" variant="link"
+        <UButton to="http://go.soundsdesigned.com/github" class="flex gap-x-2 items-center" variant="link"
           color="neutral" size="xl" target="_blank" aria-label="star us">
           <UIcon name="i-simple-icons-github" class="h-5 w-5 sm:ml-4" />
           <span class="hidden sm:block">Star us</span>
