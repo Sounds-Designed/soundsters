@@ -6,6 +6,36 @@ runConfig:
   # memoryMiB: 512
 
 env:
+  - variable: NUXT_DISCORD_CLIENT_ID
+    secret: nuxtDiscordClientId
+    availability:
+      - BUILD
+      - RUNTIME
+  - variable: NUXT_DISCORD_CLIENT_SECRET
+    secret: nuxtDiscordClientSecret
+    availability:
+      - BUILD
+      - RUNTIME
+  - variable: NUXT_DISCORD_GUILD_ID
+    secret: nuxtDiscordGuildId
+    availability:
+      - BUILD
+      - RUNTIME
+  - variable: NUXT_DISCORD_SOUNDSTER_ROLE_ID
+    secret: nuxtDiscordSoundsterRoleId
+    availability:
+      - BUILD
+      - RUNTIME
+  - variable: NUXT_DISCORD_BOT_TOKEN
+    secret: nuxtDiscordBotToken
+    availability:
+      - BUILD
+      - RUNTIME
+  - variable: NUXT_DISCORD_MODULE_MAINTAINER_ROLE_ID
+    secret: nuxtDiscordModuleMaintainerRoleId
+    availability:
+      - BUILD
+      - RUNTIME
   - variable: FB_API_KEY
     secret: firebaseKey
     availability:
