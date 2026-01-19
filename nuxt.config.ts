@@ -1,5 +1,4 @@
 import { defineNuxtConfig } from 'nuxt/config'
-import contributors from "./public/contributors.json"
 
 export default defineNuxtConfig({
   modules: [
