@@ -1,4 +1,4 @@
-name: ci
+name: Provenance
 
 on:
   push:

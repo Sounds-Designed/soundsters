@@ -1,3 +1,7 @@
+[![CI][ci-src]][ci-href]
+[![Provenance][provenance-src]][provenance-href]
+[![Update Contributors][update-contributors-src]][update-contributors-href]
+
 [Soundsters](https://soundsters.soundsdesigned.com)
 <!-- [![Soundsters](./public/social-card.jpg)](https://soundsters.soundsdesigned.com) -->
 
@@ -35,3 +39,12 @@ pnpm dev
 ### License
 
 [MIT License](./LICENSE)
+
+[ci-src]: https://github.com/Sounds-Designed/soundsters/actions/workflows/ci.yml/badge.svg?branch=main
+[ci-href]: https://github.com/Sounds-Designed/soundsters/actions/workflows/ci.yml
+
+[provenance-src]: https://github.com/Sounds-Designed/soundsters/actions/workflows/provenance.yml/badge.svg?branch=main
+[provenance-href]: https://github.com/Sounds-Designed/soundsters/actions/workflows/provenance.yml
+
+[update-contributors-src]: https://github.com/Sounds-Designed/soundsters/actions/workflows/update-contributors.yml/badge.svg?branch=main
+[update-contributors-href]: https://github.com/Sounds-Designed/soundsters/actions/workflows/update-contributors.yml
