@@ -33,6 +33,11 @@ jobs:
           NUXT_GITHUB_TOKEN: ${{ secrets.NUXT_GITHUB_TOKEN }}
         run: pnpm collect:contributors
 
+      - name: Collect contributors
+        env:
+          NUXT_GITHUB_TOKEN: ${{ secrets.NUXT_GITHUB_TOKEN }}
+        run: pnpm collect:contributors
+
       - name: Commit and push if changed
         # run: |
         #   if git diff --quiet public/contributors.json; then
