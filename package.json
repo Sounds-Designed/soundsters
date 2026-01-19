@@ -5,6 +5,7 @@
     "dev": "nuxt dev",
     "build": "nuxt build",
     "lint": "eslint .",
+    "fix": "eslint . --fix",
     "collect:contributors": "tsx scripts/collect-contributors.ts",
     "postinstall": "nuxt prepare",
     "logs": "wrangler pages deployment tail",
