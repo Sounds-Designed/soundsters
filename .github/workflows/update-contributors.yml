@@ -42,10 +42,11 @@ jobs:
           fi
           git config --global user.name "github-actions[bot]"
           git config --global user.email "22813671+github-actions[bot]@users.noreply.github.com"
+          git checkout origin/contributors
           git add public/contributors.json
-          git checkout -B contributors
           git commit -m "chore: update contributors"
-          git push -u origin contributors
+          git pull
+          git push
 
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@v8
