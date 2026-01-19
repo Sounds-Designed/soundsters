@@ -33,11 +33,6 @@ jobs:
           NUXT_GITHUB_TOKEN: ${{ secrets.NUXT_GITHUB_TOKEN }}
         run: pnpm collect:contributors
 
-      - name: Collect contributors
-        env:
-          NUXT_GITHUB_TOKEN: ${{ secrets.NUXT_GITHUB_TOKEN }}
-        run: pnpm collect:contributors
-
       - name: Commit and push if changed
         # run: |
         #   if git diff --quiet public/contributors.json; then
@@ -59,7 +54,7 @@ jobs:
           git add public/contributors.json
           git checkout -B contributors
           git commit -m "chore: update contributors"
-          git push -u origin/contributors
+          git push -u origin contributors
 
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@v8
