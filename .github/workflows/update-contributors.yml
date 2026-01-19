@@ -49,13 +49,18 @@ jobs:
           git push
 
       - name: Create Pull Request
+        id: cpr
         uses: peter-evans/create-pull-request@v8
         env:
           author: Contributor Bot
           branch: contributors
-          delete-branch: true
+          delete-branch: false
           title: Update Contributors
           description: Add new contributors to the Soundsters web app
           assignees: codetheorist
           base: main
 
+      - name: Merge Pull Request
+        uses: peter-evans/enable-pull-request-automerge@v3
+        with:
+          pull-request-number: ${{ steps.cpr.outputs.pull-request-number }}
