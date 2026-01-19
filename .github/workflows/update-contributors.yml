@@ -10,6 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: write
+      pull-requests: write
     steps:
       - name: Checkout
         uses: actions/checkout@v6
@@ -33,22 +34,7 @@ jobs:
           NUXT_GITHUB_TOKEN: ${{ secrets.NUXT_GITHUB_TOKEN }}
         run: pnpm collect:contributors
 
-      - name: Collect contributors
-        env:
-          NUXT_GITHUB_TOKEN: ${{ secrets.NUXT_GITHUB_TOKEN }}
-        run: pnpm collect:contributors
-
       - name: Commit and push if changed
-        # run: |
-        #   if git diff --quiet public/contributors.json; then
-        #     echo "No changes to commit"
-        #     exit 0
-        #   fi
-        #   git config --global user.name "github-actions[bot]"
-        #   git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
-        #   git add public/contributors.json
-        #   git commit -m "chore: update contributors"
-        #   git push
         run: |
           if git diff --quiet public/contributors.json; then
             echo "No changes to commit"
@@ -56,10 +42,25 @@ jobs:
           fi
           git config --global user.name "github-actions[bot]"
           git config --global user.email "22813671+github-actions[bot]@users.noreply.github.com"
+          git checkout origin/contributors
           git add public/contributors.json
-          git checkout -B contributors
           git commit -m "chore: update contributors"
-          git push -u origin contributors
+          git pull
+          git push
 
       - name: Create Pull Request
+        id: cpr
         uses: peter-evans/create-pull-request@v8
+        env:
+          author: Contributor Bot
+          branch: contributors
+          delete-branch: false
+          title: Update Contributors
+          description: Add new contributors to the Soundsters web app
+          assignees: codetheorist
+          base: main
+
+      - name: Merge Pull Request
+        uses: peter-evans/enable-pull-request-automerge@v3
+        with:
+          pull-request-number: ${{ steps.cpr.outputs.pull-request-number }}
