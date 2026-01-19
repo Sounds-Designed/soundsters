@@ -67,7 +67,7 @@ const contributors = computed(() => {
         </NuxtLink>
       </div>
     </div>
-    <div v-if="contributors?.length >= limit || true">
+    <div v-if="contributors?.length >= limit">
       <div class="pt-8 flex justify-center">
         <UButton
           variant="solid"
