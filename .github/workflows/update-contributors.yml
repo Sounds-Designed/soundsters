@@ -40,11 +40,11 @@ jobs:
           ref: contributors
 
       - name: Commit and push if changed
+        #   if git diff --quiet public/contributors.json; then
+        #   #   echo "No changes to commit"
+        #   #   exit 0
+        #   # fi
         run: |
-          if git diff --quiet public/contributors.json; then
-            echo "No changes to commit"
-            exit 0
-          fi
           git config --global user.name "github-actions[bot]"
           git config --global user.email "22813671+github-actions[bot]@users.noreply.github.com"
           git add public/contributors.json
