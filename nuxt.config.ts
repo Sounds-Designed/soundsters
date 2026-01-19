@@ -139,5 +139,16 @@ export default defineNuxtConfig({
       //   resvg: 'wasm'
       // }
     }
+  },
+
+  icon: {
+    customCollections: [
+      {
+        prefix: 'sd',
+        dir: './app/assets/icons',
+        // if you want to include all the icons in nested directories:
+        // recursive: true,
+      },
+    ],
   }
 })
