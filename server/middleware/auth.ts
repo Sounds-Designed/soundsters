@@ -7,7 +7,7 @@ export default defineEventHandler(async (event) => {
     const [
       contributors,
       // moduleMaintainers,
-      nuxtUIProOutsideCollaborators
+      // nuxtUIProOutsideCollaborators
     ] = await Promise.all([
       fetchContributors(event),
       // fetchModuleMaintainers(),
