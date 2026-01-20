@@ -186,7 +186,9 @@ const collectOrganization = async (org: string) => {
     per_page: 100,
   })
   for (const repo of repos) {
-    if (repo.private || repo.archived || repo.disabled || repo.fork) {
+    if (
+      // repo.private ||
+      repo.archived || repo.disabled || repo.fork) {
       continue
     }
     await collectRepository(org, repo.name)
