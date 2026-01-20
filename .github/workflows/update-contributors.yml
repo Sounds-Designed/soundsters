@@ -47,15 +47,3 @@ jobs:
           git commit -m "chore: update contributors"
           git pull
           git push
-
-      - name: Create Pull Request
-        uses: peter-evans/create-pull-request@v8
-        env:
-          author: Contributor Bot
-          branch: contributors
-          delete-branch: true
-          title: Update Contributors
-          description: Add new contributors to the Soundsters web app
-          assignees: codetheorist
-          base: main
-
