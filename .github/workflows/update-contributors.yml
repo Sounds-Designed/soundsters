@@ -10,7 +10,6 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: write
-      pull-requests: write
     steps:
       - name: Checkout
         uses: actions/checkout@v6
@@ -42,8 +41,6 @@ jobs:
           fi
           git config --global user.name "github-actions[bot]"
           git config --global user.email "22813671+github-actions[bot]@users.noreply.github.com"
-          git checkout origin/contributors
           git add public/contributors.json
           git commit -m "chore: update contributors"
-          git pull
           git push
