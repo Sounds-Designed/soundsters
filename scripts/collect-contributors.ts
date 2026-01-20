@@ -182,7 +182,7 @@ const collectOrganization = async (org: string) => {
   console.log(`Fetching repositories for ${org}`)
   const repos = await octokit.paginate(octokit.rest.repos.listForOrg, {
     org,
-    type: 'public',
+    // type: 'public',
     per_page: 100,
   })
   for (const repo of repos) {
