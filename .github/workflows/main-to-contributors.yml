@@ -1,4 +1,4 @@
-name: Main to Contributors
+name: Update Branches
 
 on:
   pull_request:
@@ -22,3 +22,16 @@ jobs:
           token: ${{ secrets.NUXT_GITHUB_TOKEN }}
           from_branch: main
           to_branch: contributors
+  main-to-dev:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          fetch-depth: 0
+      - name: Merge Main into Dev
+        uses: devvspaces/merge-branches@v1
+        if: ${{ github.event.pull_request.merged }}
+        with:
+          token: ${{ secrets.NUXT_GITHUB_TOKEN }}
+          from_branch: main
+          to_branch: dev
