@@ -182,11 +182,13 @@ const collectOrganization = async (org: string) => {
   console.log(`Fetching repositories for ${org}`)
   const repos = await octokit.paginate(octokit.rest.repos.listForOrg, {
     org,
-    type: 'public',
+    // type: 'public',
     per_page: 100,
   })
   for (const repo of repos) {
-    if (repo.private || repo.archived || repo.disabled || repo.fork) {
+    if (
+      // repo.private ||
+      repo.archived || repo.disabled || repo.fork) {
       continue
     }
     await collectRepository(org, repo.name)
