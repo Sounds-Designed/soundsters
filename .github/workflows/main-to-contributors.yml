@@ -1,4 +1,4 @@
-name: Provenance
+name: Main to Contributors
 
 on:
   pull_request:
