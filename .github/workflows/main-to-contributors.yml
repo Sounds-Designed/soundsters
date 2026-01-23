@@ -9,7 +9,7 @@ on:
 permissions:
   contents: read
 jobs:
-  check-provenance:
+  main-to-contributors:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v6
