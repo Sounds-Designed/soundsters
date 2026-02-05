@@ -22,7 +22,7 @@ const format = useNumberFormatter()
 
 defineOgImageComponent('Soundster', {
   contributor,
-  cacheMaxAgeSeconds: 24 * 60 * 60, // 24 hours
+  cacheMaxAgeSeconds: 24 * 60 * 60 * 7, // 24 hours
 })
 
 useHead({
